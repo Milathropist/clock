@@ -67,6 +67,7 @@ export const MILAVER_ICON_NAMES = {
   mathematician: "Mathematician",
   monk: "Monk",
   mutant: "Mutant",
+  oracle: "Oracle",
   philosopher: "Philosopher",
   po: "Po",
   politician: "Politician",
@@ -132,8 +133,8 @@ export function getMilaVerIconPath(iconId, alignmentIndex) {
 
   if (milaName) {
     return alignmentIndex > 0
-      ? `./img/MilaIcons/${milaName}_altalign_MilaVer.webp`
-      : `./img/MilaIcons/${milaName}_MilaVer.webp`;
+      ? `./img/MilaIcons/Altalign/${milaName}_altalign_MilaVer.webp`
+      : `./img/MilaIcons/Default/${milaName}_MilaVer.webp`;
   }
 
   if (milaRootName) {
